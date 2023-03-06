@@ -23,7 +23,7 @@ const Header = () => {
               <a class="site-menu-item_link" href="/news/">news</a>
             </li>
             <li class="site-menu-item">
-              <a class="site-menu-item_link" href="/#service">service</a>
+              <a class="site-menu-item_link" href="/service">service</a>
             </li>
             <li class="site-menu-item">
               <a class="site-menu-item_link" href="/interview/">interview</a>
