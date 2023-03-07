@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Fetch from './Fetch';
+
 
 function News() {
   return (
-    <div>News</div>
+    <div>
+      <h1>NEWS</h1>
+      <Fetch />
+    </div>
   )
 }
 
