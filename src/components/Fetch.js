@@ -23,11 +23,20 @@ const Fetch = () => {
 
   const usePosts = posts.map((post, index) => {
     return <div key={index}>
-      <li>
+      <li class="news-data">
         <Link to={`/news/${post.id}`} >
-          <Moment format="YYYY/MM/DD">
-            {post.date}
-          </Moment>
+          <div class="news-date">
+            <span class="news-date-year">
+              <Moment format="YYYY">
+                {post.date}
+              </Moment>
+            </span><br />
+            <span class="news-date-monthDay">
+              <Moment format="MM.DD">
+                {post.date}
+              </Moment>
+            </span>
+          </div>
           <span>{post.title}</span>
         </Link>
       </li>
@@ -36,7 +45,7 @@ const Fetch = () => {
 
   return (
     <div>
-      <ul>
+      <ul class="news-list">
         {usePosts}
       </ul>
 

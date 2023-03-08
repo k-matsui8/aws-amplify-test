@@ -10,16 +10,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <main className="App">
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/news' element={<News />} />
-          <Route exact path="/news/:id" element={<Post />} />
-          <Route path='/service' element={< Service />} />
-          <Route path='/interview' element={<Interview />} />
-        </Routes>
-      </div>
+        <div class="p-inner">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/news' element={<News />} />
+            <Route exact path="/news/:id" element={<Post />} />
+            <Route path='/service' element={< Service />} />
+            <Route path='/interview' element={<Interview />} />
+          </Routes>
+        </div>
+      </main>
     </Router>
   );
 }

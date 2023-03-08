@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Moment from 'react-moment'
 // import Moment from 'react-moment'
 
 const Post = () => {
@@ -41,15 +42,26 @@ const Post = () => {
     //   </div>
     // )
     .then(res => res.json())
+    // .then(res => console.log(res))
     .then(json => {
       document.getElementById("title").innerHTML = json.title;
       document.getElementById("body").innerHTML = json.body;
+      document.getElementById("date").innerHTML = json.date;
     })
   return (
-    <div>
-      <h1 id="title"></h1>
-      <p id="body"></p>
-    </div>
+    <div class="news-inner">
+      <div class="p-fvHeading">
+        <h2 class="p-fvHeading_en">NEWS</h2>
+        <h3 class="p-fvHeading_jp">記事一覧</h3>
+      </div >
+      <div>
+        <div class="news-date">
+          <span id="date" class="news-date-monthDay"></span>
+        </div>
+        <h4 id="title" class="news-title"></h4>
+        <p id="body" class="p-body"></p>
+      </div>
+    </div >
   )
 
 }

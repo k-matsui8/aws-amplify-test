@@ -12,9 +12,13 @@ a {
   text-decoration: none;
 }
 
+/* header */
+
 header {
   /* position: fixed; */
   width: 100%;
+  position: fixed;
+  top: 4.5em;
 }
 
 .head-inner {
@@ -26,13 +30,30 @@ header {
   text-transform: uppercase;
 }
 
+.head-logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.head-logo span {
+  font-size: 50%;
+}
+
 .head-inner div {
   display: inline-block;
 }
 
-/* .js-splited {
+.head-sitename_title {
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+}
 
-} */
+.head-sitename_title a {
+  text-decoration: none;
+  color: black;
+}
 
 .site-menu {
   display: inline-block;
@@ -45,7 +66,7 @@ header {
 }
 
 .site-menu-item {
-  margin: auto 20px auto 0;
+  margin: auto 0 auto 1.5rem;
   font-size: 1.4rem;
 }
 
@@ -63,7 +84,91 @@ header {
   color: #fff;
   border-radius: 0.5em;
   border: 4px solid #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   padding: .5rem 2rem;
+}
+
+/* main */
+
+.p-inner {
+  padding: 5em 0 10em 22%;
+}
+
+.p-fvHeading {
+  margin: 0;
+}
+
+.p-fvHeading_en {
+  font-size: 7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.p-fvHeading_jp {
+  font-size: .4rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  opacity: .9;
+}
+
+.p-fvHeading_jp::before {
+  content: "-";
+}
+
+.p-contents {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+
+.news-list {
+  padding: 0;
+}
+
+.news-date {
+  display: inline-block;
+  margin-right: 7rem;
+}
+
+.news-data {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.news-data a {
+  text-decoration: none;
+  color: black;
+}
+
+.news-date-year {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.news-date-monthDay {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.p-body {
+  font-size: 1rem;
+}
+
+.news-inner {
+  padding-right: 20%;
+}
+
+.news-inner .news-date {
+  padding-top: 4rem;
+}
+
+.news-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 0 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
